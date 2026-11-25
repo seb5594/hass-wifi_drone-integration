@@ -33,7 +33,7 @@ jobs:
         with:
           repository: seb5594/hass-workflows
           ref: main
-          token: ${{ secrets.ORCHESTRATION_PAT }}
+          token: ${{ secrets.ORCHESTRATION_PAT || github.token }}
           path: .engine
           persist-credentials: false
       - id: releases
@@ -57,7 +57,7 @@ jobs:
         with:
           repository: seb5594/hass-workflows
           ref: main
-          token: ${{ secrets.ORCHESTRATION_PAT }}
+          token: ${{ secrets.ORCHESTRATION_PAT || github.token }}
           path: .engine
           persist-credentials: false
       - uses: ./.engine/.actions/ha-test
@@ -78,7 +78,7 @@ jobs:
         with:
           repository: seb5594/hass-workflows
           ref: main
-          token: ${{ secrets.ORCHESTRATION_PAT }}
+          token: ${{ secrets.ORCHESTRATION_PAT || github.token }}
           path: .engine
           persist-credentials: false
       - uses: actions/download-artifact@v8
