@@ -1,9 +1,6 @@
 # Changelog
 
-## Unreleased
-
-- Requires Home Assistant 2024.4 or newer (`ConfigFlowResult`); real Home Assistant tests and a Compatibility workflow check every release from there.
-
 ## 0.1.0
 
-- ✨ Initial version created from the integration template.
+- Added a configuration flow for the WiFi Drone Bridge.
+- Added a camera entity with JPEG snapshots and a proxied MJPEG live view, a video connectivity sensor and redacted diagnostics.

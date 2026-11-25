@@ -1,0 +1,13 @@
+{
+  "domain": "wifi_drone",
+  "name": "WiFi Drone",
+  "codeowners": ["@seb5594"],
+  "config_flow": true,
+  "dependencies": ["binary_sensor", "camera"],
+  "documentation": "https://github.com/seb5594/hass-wifi_drone-integration",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/seb5594/hass-wifi_drone-integration/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

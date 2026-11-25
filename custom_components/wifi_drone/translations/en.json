@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to WiFi Drone",
+        "data": {
+          "bridge_url": "Bridge URL",
+          "api_token": "Bridge API token"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure WiFi Drone",
+        "data": {
+          "bridge_url": "Bridge URL",
+          "api_token": "Bridge API token"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Update the Bridge API token",
+        "data": {
+          "api_token": "Bridge API token"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Enter an HTTP(S) bridge origin without a path or credentials.",
+      "invalid_auth": "The bridge rejected the API token.",
+      "cannot_connect": "Could not connect to the WiFi Drone Bridge."
+    },
+    "abort": {
+      "already_configured": "This bridge is already configured.",
+      "reconfigure_successful": "The bridge was reconfigured.",
+      "reauth_successful": "The API token was updated."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "video_stream": {
+        "name": "Video stream"
+      }
+    }
+  }
+}

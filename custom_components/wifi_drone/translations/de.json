@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mit WiFi Drone verbinden",
+        "data": {
+          "bridge_url": "Bridge-URL",
+          "api_token": "Bridge-API-Token"
+        }
+      },
+      "reconfigure": {
+        "title": "WiFi Drone neu konfigurieren",
+        "data": {
+          "bridge_url": "Bridge-URL",
+          "api_token": "Bridge-API-Token"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Bridge-API-Token aktualisieren",
+        "data": {
+          "api_token": "Bridge-API-Token"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Gib eine HTTP(S)-Adresse ohne Pfad oder Anmeldedaten ein.",
+      "invalid_auth": "Die Bridge hat den API-Token abgelehnt.",
+      "cannot_connect": "Die WiFi Drone Bridge ist nicht erreichbar."
+    },
+    "abort": {
+      "already_configured": "Diese Bridge ist bereits eingerichtet.",
+      "reconfigure_successful": "Die Bridge wurde neu konfiguriert.",
+      "reauth_successful": "Der API-Token wurde aktualisiert."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "video_stream": {
+        "name": "Videostream"
+      }
+    }
+  }
+}
